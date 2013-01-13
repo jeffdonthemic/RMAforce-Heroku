@@ -2,6 +2,7 @@ class RmaController < ApplicationController
   def index
   end
   
+  # search and display results
   def display
     @json = Rma.search(params[:rmaName])
     # render :text => @json.inspect
